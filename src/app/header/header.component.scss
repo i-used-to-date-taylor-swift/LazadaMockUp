@@ -1,0 +1,231 @@
+.header-container{
+  .first-block {
+    background: #083645;
+    .action-button{
+      margin-top: 33px;
+      #save-more-on-app {
+        color: #f57224;
+      }
+      #sell-on-lazada{
+        color: #1A717F
+      }
+      span p {
+        text-align: center;
+        font-size: 12px;
+        font-weight: bolder;
+        color: gray;
+       }
+      span p:hover{
+        cursor: pointer;
+      }
+    }
+  }
+
+  .second-block {
+    background: #003E52;
+    padding-bottom: 6px;
+    .first-grid {
+      img{
+        width: 127px;
+        height: 40px;
+      }
+    }
+    .second-grid {
+      width: 100%;
+
+      .action-field {
+          margin-bottom: 5px;
+          input{
+            width: 100%;
+            height: 30px;
+          }
+          input[type='text']{
+            font-family: 'Roboto', sans-serif;
+
+            color: gray;
+          }
+          padding-bottom: 3px;
+          #search-box-button{
+            margin-top: 5px;
+            width: 100%;
+            height: 35px;
+            text-indent: -9999px;
+            border: none;
+            border-radius: 0 2px 2px 0;
+            outline: none;
+            background: #f57224;
+          }
+      }
+
+      .link-field {
+        display: flex;
+        p{
+          font-size: 14px;
+          color: rgba(255,255,255,.68);
+          font-weight: bolder;
+          margin-right: 5px;
+        }
+        p:hover{
+          cursor: pointer;
+        }
+        .first-grid{
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          span{
+            display:  flex;
+          }
+        }
+      }
+    }
+    .third-grid{
+      .first-block {
+        img{
+          width: 188px;
+          right: 45px;
+          float: right;
+        }
+         img:hover{
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+
+@media only screen and (min-width: 700px) {
+  .first-block {
+    .action-button {
+      display: flex;
+      justify-content: center;
+      span{
+        margin-top: -22px;
+        display: flex;
+        margin-bottom: -7px;
+        p{
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+
+  .second-block{
+    .to-center-content{
+      display: flex;
+      justify-content: center;
+    }
+    .set-content{
+      width: 70%;
+    }
+    .container{
+      margin-top: 10px;
+      .second-grid{
+        .action-field{
+              display: flex;
+          #input{
+            width: 93%;
+            input{
+              width: 100%;
+            }
+          }
+          #button{
+            width: 7%;
+            // height: 52px;
+            margin-top: -1px;
+            button{
+              width: 100%;
+              height: 100%;
+            }
+          }
+
+          #search-box-button{
+            width: 45px;
+            height: 51px;
+            text-indent: -9999px;
+            border: none;
+            border-radius: 0 2px 2px 0;
+            outline: none;
+            background: #f57224;
+            margin-top: 1px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+@media only screen and(min-width: 1024px) {
+  .first-block {
+    .action-button{
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+  .second-block {
+    .container{
+      display: flex;
+      >.first-grid {
+        width: 20%;
+
+        p{
+          color: white;
+          font-weight: bolder;
+        }
+      }
+      .second-grid {
+        width: 60%;
+        .action-field{
+          display: flex;
+          #input{
+            width: 93%;
+            input{
+              width: 100%;
+            }
+          }
+          #button{
+            width: 7%;
+            // height: 52px;
+            margin-top: -1px;
+            button{
+              width: 100%;
+              height: 100%;
+            }
+          }
+
+          #search-box-button{
+            width: 45px;
+            // height: 47px;
+            text-indent: -9999px;
+            border: none;
+            border-radius: 0 2px 2px 0;
+            outline: none;
+            background: #f57224;
+            margin-top: 1px;
+          }
+        }
+
+
+        .link-field {
+          .first-grid{
+            display: flex;
+            justify-content: flex-start;
+            span p {
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+      .third-grid {
+        width: 20%;
+        .first-block{
+          img{
+            width: 80%;
+          }
+        }
+      }
+    }
+  }
+}

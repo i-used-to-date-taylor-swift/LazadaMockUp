@@ -1,0 +1,56 @@
+<div class="header-container">
+  <div class="first-block">
+    <div class="center-content">
+      <div class="content">
+          <div class="action-button">
+              <span>
+                <p id="save-more-on-app">SAVE MORE ON APP</p>
+                <p id="sell-on-lazada">SELL ON LAZADA</p>
+                <p>CUSTOMER CARE</p>
+                <p>TRACK MY ORDER</p>
+                <p>LOGIN</p>
+              </span>
+          </div>
+      </div>
+    </div>
+  </div>
+  <div class="second-block">
+    <div class="to-center-content">
+      <div class="set-content">
+        <div class="container">
+          <div class="first-grid" *ngIf="displayContent" >
+            <img src="//laz-img-cdn.alicdn.com/images/ims-web/TB1NV8hdAfb_uJjSsD4XXaqiFXa.png" alt="Online Shopping Lazada.com.ph Philippines Logo">
+            <p>Categories</p>
+          </div>
+          <div class="second-grid"  >
+            <div class="action-field" >
+              <div  id="input">
+                  <input type="text" placeholder="Search in Lazada">
+              </div>
+              <div id="button">
+                  <button id="search-box-button">
+                      Search
+                    </button>
+              </div>
+            </div>
+            <div class="link-field" *ngIf="displayContent">
+              <div class="first-grid">
+                <span>
+                  <p>LazMall</p>
+                  <p>Global Collection</p>
+                  <p>Load & Store</p>
+                  <p>Vouchers</p>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="third-grid" *ngIf="displayContent"  >
+              <div class="first-block">
+                  <img src="//laz-img-cdn.alicdn.com/images/ims-web/TB15i58FirpK1RjSZFhXXXSdXXa.png" alt="WALLET 10">
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
